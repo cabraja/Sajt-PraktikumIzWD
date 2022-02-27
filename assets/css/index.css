@@ -40,6 +40,28 @@ header {
   border-bottom: 1px solid #5a5a5a;
 }
 
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 25px 15px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 16px 10px;
+  }
+}
+
 header #logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,8 +80,45 @@ header #logo i {
   margin-right: 8px;
 }
 
+@media screen and (max-width: 1000px) {
+  header #logo i {
+    font-size: 1.6rem;
+  }
+}
+
 header #logo h1 {
   font-variation-settings: "wght" 200;
+}
+
+@media screen and (max-width: 1000px) {
+  header #logo h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header #logo h1 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top: 1px solid white;
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 8px;
+  }
 }
 
 header nav a {
@@ -77,6 +136,27 @@ header nav a:hover {
   color: #7de2d1;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+@media screen and (max-width: 1000px) {
+  header nav a {
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header nav a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header nav .fas {
+    display: none;
+    margin: 0;
+  }
 }
 
 #landing-wrapper {
@@ -123,10 +203,43 @@ header nav a:hover {
   padding-top: 60px;
 }
 
+@media screen and (max-width: 1200px) {
+  #landing-wrapper #landing #landing-content {
+    width: 80%;
+    padding-top: 90px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #landing-wrapper #landing #landing-content {
+    padding-top: 120px;
+  }
+}
+
 #landing-wrapper #landing #landing-content h3 {
   color: whitesmoke;
   font-variation-settings: "wght" 200;
   font-size: 5.5rem;
+  -webkit-animation: slideIn 2s linear forwards;
+          animation: slideIn 2s linear forwards;
+}
+
+@media screen and (max-width: 1200px) {
+  #landing-wrapper #landing #landing-content h3 {
+    font-size: 3.8rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #landing-wrapper #landing #landing-content h3 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #landing-wrapper #landing #landing-content h3 {
+    font-size: 2.2rem;
+  }
 }
 
 #landing-wrapper #landing #landing-content a {
@@ -143,6 +256,12 @@ header nav a:hover {
   transition: 0.4s;
 }
 
+@media screen and (max-width: 1200px) {
+  #landing-wrapper #landing #landing-content a {
+    font-size: 4rem;
+  }
+}
+
 h2 {
   text-align: center;
   margin: 0px auto;
@@ -153,6 +272,13 @@ h2 {
   padding-bottom: 8px;
   letter-spacing: 3px;
   color: whitesmoke;
+}
+
+@media screen and (max-width: 700px) {
+  h2 {
+    width: 80%;
+    padding-top: 4vh;
+  }
 }
 
 #about {
@@ -179,6 +305,18 @@ h2 {
   font-size: 1.2rem;
 }
 
+@media screen and (max-width: 1200px) {
+  #about p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #about p {
+    font-size: 0.9rem;
+  }
+}
+
 .about-content {
   width: 85%;
   margin: 0px auto;
@@ -199,6 +337,25 @@ h2 {
   margin-bottom: 6vh;
 }
 
+@media screen and (max-width: 1200px) {
+  .about-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5vh;
+  }
+}
+
 .about-content div {
   padding: 30px;
   background-color: #3b3b3b;
@@ -217,6 +374,19 @@ h2 {
           align-items: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .about-content div {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-content div {
+    width: 80vw;
+    margin-top: 8vh;
+  }
+}
+
 .about-content div h4 {
   font-size: 1.4rem;
 }
@@ -228,9 +398,33 @@ h2 {
   color: #339989;
 }
 
+@media screen and (max-width: 1200px) {
+  .about-content div i {
+    font-size: 2.6rem;
+  }
+}
+
 .about-content div ul {
   width: 80%;
   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-content div ul {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-content div ul {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-content div ul {
+    font-size: 1.1rem;
+  }
 }
 
 .about-content div li {
@@ -261,14 +455,53 @@ h2 {
   justify-items: center;
 }
 
+@media screen and (max-width: 1200px) {
+  #projects #project-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 #projects .project {
   width: 35vw;
+}
+
+@media screen and (max-width: 1200px) {
+  #projects .project {
+    width: 80vw;
+  }
 }
 
 #projects .project-img {
   width: 100%;
   height: 40vh;
   background-size: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  #projects .project-img {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #projects .project-img {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #projects .project-img {
+    height: 30vh;
+  }
 }
 
 #projects .project-img .project-img-inside {
@@ -334,9 +567,41 @@ h2 {
   font-size: 1.2rem;
 }
 
+@media screen and (max-width: 500px) {
+  #projects .project-info h5 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #projects .project-info .project-tech {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 #projects .project-info i {
   font-size: 2rem;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  #projects .project-info i {
+    font-size: 1.1rem;
+  }
 }
 
 .fa-html5 {
@@ -362,5 +627,74 @@ h2 {
 footer {
   width: 100%;
   background-color: #3b3b3b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    padding-bottom: 8%;
+    padding-top: 8%;
+  }
+}
+
+footer h6 {
+  font-size: 1.2rem;
+  font-variation-settings: "wght" 100;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #339989;
+}
+
+.separator {
+  height: 3px;
+  background-color: #339989;
+  width: 40%;
+  margin: 20px auto;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    margin-top: -1000px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    margin-top: -1000px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=index.css.map */
