@@ -624,6 +624,69 @@ h2 {
   color: #f1502f;
 }
 
+#contact {
+  background-color: #2b2c28;
+}
+
+#contact form {
+  width: 50vw;
+  margin: 8vh auto 0vh auto;
+  padding-bottom: 8vh;
+}
+
+#contact .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+#contact .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  padding: 0 25px;
+  margin-bottom: 16px;
+}
+
+#contact .form-group input {
+  font-size: 1.3rem;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid #339989;
+  color: white;
+}
+
+#contact .form-group textarea {
+  font-size: 1.3rem;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid #339989;
+  color: white;
+}
+
 footer {
   width: 100%;
   background-color: #3b3b3b;
